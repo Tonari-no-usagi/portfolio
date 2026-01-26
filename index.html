@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Webアプリケーション & システム開発エンジニアのポートフォリオ。React/Next.jsによるフロントエンド開発から、Rust/Pythonを用いたバックエンド・業務効率化ツールの制作まで、ビジネス課題を技術で解決します。">
+    <title>Tonari-no-usagi | Web & Systems Engineer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-globes"></div>
+
+    <nav class="navbar">
+        <div class="logo">PORTFOLIO</div>
+        <ul class="nav-links">
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#services" data-i18n="nav_services">Services</a></li>
+            <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <button id="lang-toggle" class="btn secondary-btn"
+            style="padding: 0.3rem 1rem; margin-left: 1rem; font-size: 0.8rem;">EN</button>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <p class="greeting" data-i18n="hero_greeting">Welcome to my</p>
+            <h1 class="glitch" data-text="PORTFOLIO">PORTFOLIO</h1>
+            <h2 class="typing-text" data-i18n="hero_role">Webアプリケーション & システム開発エンジニア</h2>
+            <p class="bio-text" data-i18n="hero_bio">
+                モダンなフロントエンド構築から、堅牢なバックエンド、業務効率化ツールの開発まで。幅広い技術スタックで、あなたのビジネス課題をエンジニアリングで解決します。</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary-btn" data-i18n="btn_work">実績を見る</a>
+                <a href="#contact" class="btn secondary-btn" data-i18n="btn_contact">お問い合わせ</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll Down</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="sect_about">01. About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p data-i18n="about_p1">こんにちは。私は技術による課題解決に情熱を注ぐエンジニアです。</p>
+                        <p data-i18n="about_p2">
+                            Web開発の全レイヤー（フロントエンドからバックエンド、インフラ）を横断的に理解し、最適な技術選定と実装を行います。特にパフォーマンスと保守性を重視したシステム設計が得意です。
+                        </p>
+                        <p data-i18n="about_p3">
+                            常に最新の技術トレンド（Rust, WebAssembly等）をキャッチアップし、それを実用的なビジネスソリューションとして還元することを目指しています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="sect_services">02. Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3 class="service-title" data-i18n="serv_web_title">Web Development</h3>
+                        <p class="service-desc" data-i18n="serv_web_desc">
+                            React/Next.js等を用いたモダンで高速なWebサイト・Webアプリケーション開発。モバイル対応からSEO最適化までサポートします。</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h3 class="service-title" data-i18n="serv_sys_title">System & Tools</h3>
+                        <p class="service-desc" data-i18n="serv_sys_desc">
+                            業務効率化のための自動化ツール、CLIツール、デスクトップアプリ開発。RustやPython等の適材適所な技術選定で課題を解決します。</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-comments"></i></div>
+                        <h3 class="service-title" data-i18n="serv_consult_title">Technical Consultation</h3>
+                        <p class="service-desc" data-i18n="serv_consult_desc">
+                            技術選定、既存コードのパフォーマンス改善、モダン技術の導入支援など。開発プロセスの改善提案も行います。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="sect_skills">03. Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fa-solid fa-code"></i> <span data-i18n="cat_lang">Languages</span></h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fa-brands fa-rust"></i> Rust</span>
+                            <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="skill-tag"><i class="fa-brands fa-golang"></i> Go</span>
+                            <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                            <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fa-solid fa-layer-group"></i> <span data-i18n="cat_tools">Technologies &
+                                Tools</span></h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">WebAssembly</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="sect_projects">04. Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-tilt>
+                        <div class="card-header">
+                            <div class="folder-icon"><i class="fa-regular fa-folder"></i></div>
+                            <div class="external-links">
+                                <a href="https://github.com/Tonari-no-usagi/oidc4vc-static-resol-action" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">oidc4vc-static-resol-action</h3>
+                        <p class="project-desc" data-i18n="desc_oidc4vc_action">OIDC4VCI / SD-JWT VC / did:web
+                            に対応したサーバーレスな証明書発行（VC）デモサイトを自動生成する GitHub Action。</p>
+                        <ul class="project-tech-list">
+                            <li>Go</li>
+                            <li>GitHub Actions</li>
+                            <li>OIDC4VCI</li>
+                        </ul>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-tilt>
+                        <div class="card-header">
+                            <div class="folder-icon"><i class="fa-regular fa-folder"></i></div>
+                            <div class="external-links">
+                                <a href="https://github.com/Tonari-no-usagi/oidc4vc-static-resol" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">oidc4vc-static-resol</h3>
+                        <p class="project-desc" data-i18n="desc_oidc4vc_resol">OpenID4VCI/VP準拠のメタデータとSD-JWT
+                            VCを生成し、GitHub Pages上に発行デモサイトを5分で構築するCLIツール。</p>
+                        <ul class="project-tech-list">
+                            <li>Go</li>
+                            <li>CLI</li>
+                            <li>OpenID4VCI</li>
+                        </ul>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-tilt>
+                        <div class="card-header">
+                            <div class="folder-icon"><i class="fa-regular fa-folder"></i></div>
+                            <div class="external-links">
+                                <a href="https://github.com/Tonari-no-usagi/gh-did-webvh" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">gh-did-webvh</h3>
+                        <p class="project-desc" data-i18n="desc_gh_did">GitHub Pagesを活用したdid:webvhの自動運用・管理ツール。</p>
+                        <ul class="project-tech-list">
+                            <li>Go</li>
+                            <li>DID</li>
+                            <li>GitHub Pages</li>
+                        </ul>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-tilt>
+                        <div class="card-header">
+                            <div class="folder-icon"><i class="fa-regular fa-folder"></i></div>
+                            <div class="external-links">
+                                <a href="https://github.com/Tonari-no-usagi/python-concurrency-runtime" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">python-concurrency-runtime</h3>
+                        <p class="project-desc" data-i18n="desc_py_concurrency">
+                            スレッド、プロセス、非同期、分散実行をインテリジェントに管理する、Python用の統合タスクベース並行処理ランタイム。</p>
+                        <ul class="project-tech-list">
+                            <li>Python</li>
+                            <li>Concurrency</li>
+                            <li>Async</li>
+                        </ul>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card" data-tilt>
+                        <div class="card-header">
+                            <div class="folder-icon"><i class="fa-regular fa-folder"></i></div>
+                            <div class="external-links">
+                                <a href="https://github.com/Tonari-no-usagi/qir-rust-interp" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">qir-rust-interp</h3>
+                        <p class="project-desc" data-i18n="desc_qir">Rust製の軽量な量子中間表現（QIR）エミュレータ。</p>
+                        <ul class="project-tech-list">
+                            <li>Rust</li>
+                            <li>Quantum</li>
+                            <li>Emulator</li>
+                        </ul>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card" data-tilt>
+                        <div class="card-header">
+                            <div class="folder-icon"><i class="fa-regular fa-folder"></i></div>
+                            <div class="external-links">
+                                <a href="https://github.com/Tonari-no-usagi/Nano-Flow-TTS" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Nano-Flow-TTS</h3>
+                        <p class="project-desc" data-i18n="desc_nano_flow">フローベースの生成モデルに焦点を当てた音声合成（TTS）関連プロジェクト。</p>
+                        <ul class="project-tech-list">
+                            <li>Rust</li>
+                            <li>ML</li>
+                            <li>TTS</li>
+                        </ul>
+                    </article>
+
+                    <!-- Project 7 -->
+                    <article class="project-card" data-tilt>
+                        <div class="card-header">
+                            <div class="folder-icon"><i class="fa-regular fa-folder"></i></div>
+                            <div class="external-links">
+                                <a href="https://github.com/Tonari-no-usagi/git-account-switcher" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">git-account-switcher</h3>
+                        <p class="project-desc" data-i18n="desc_git_switcher">
+                            WindowsでGitアカウントをフォルダごとに自動切り替えするCLIツール。仕事用と個人用のプロファイル管理を簡素化します。</p>
+                        <ul class="project-tech-list">
+                            <li>Rust</li>
+                            <li>CLI</li>
+                            <li>Windows</li>
+                        </ul>
+                    </article>
+
+                    <!-- Project 8 -->
+                    <article class="project-card" data-tilt>
+                        <div class="card-header">
+                            <div class="folder-icon"><i class="fa-regular fa-folder"></i></div>
+                            <div class="external-links">
+                                <a href="https://github.com/Tonari-no-usagi/wasm-game-of-life" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">wasm-game-of-life</h3>
+                        <p class="project-desc" data-i18n="desc_wasm_life">
+                            RustとWasm製のインタラクティブなライフゲーム。ブラウザでの高性能コンピューティングをデモします。</p>
+                        <ul class="project-tech-list">
+                            <li>Rust</li>
+                            <li>Wasm</li>
+                            <li>JS</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="sect_contact">05. Contact</h2>
+                <div class="contact-content">
+                    <p data-i18n="contact_msg">新しい機会やコラボレーションを常に歓迎しています。質問から些細な挨拶まで、お気軽にご連絡ください！</p>
+                    <a href="https://x.com/Tonari_no_usagi" target="_blank" class="btn contact-btn"
+                        data-i18n="contact_btn"><i class="fa-brands fa-twitter"></i> X (Twitter) で挨拶する</a>
+                    <div class="social-links">
+                        <a href="https://github.com/Tonari-no-usagi" target="_blank" aria-label="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/Tonari_no_usagi" target="_blank" aria-label="Twitter"><i
+                                class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footer">Designed & Built by Tonari-no-usagi</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
