@@ -1,16 +1,16 @@
 :root {
-    /* Adjusted to softer, lighter deep navy instead of near-black */
-    --bg-color: #1a1a2e;
-    --text-color: #e6e6e6;
-    --accent-primary: #ffaa75;
-    /* Slightly brighter Rust */
-    --accent-secondary: #4db5f2;
-    /* Slightly softer Blue */
-    --secondary-bg: #232342;
-    /* Lighter secondary background */
-    --glass-bg: rgba(35, 35, 66, 0.6);
-    /* Lighter glass */
-    --glass-border: rgba(255, 255, 255, 0.15);
+    /* Changed to Clean White */
+    --bg-color: #ffffff;
+    /* Darker text for readability on white */
+    --text-color: #333333;
+    /* Warm accent colors maintained but adjusted */
+    --accent-primary: #ff7e5f;
+    --accent-secondary: #e65a3c;
+    /* Very light warm background for cards */
+    --secondary-bg: #fdf8f5;
+    /* Glass effect for light mode */
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(0, 0, 0, 0.08);
     --transition-speed: 0.3s;
     --font-heading: 'Fira Code', monospace;
     --font-body: 'Inter', sans-serif;
@@ -43,8 +43,8 @@ body {
     height: 100%;
     z-index: -1;
     background:
-        radial-gradient(circle at 15% 50%, rgba(97, 218, 251, 0.05) 0%, transparent 25%),
-        radial-gradient(circle at 85% 30%, rgba(222, 165, 132, 0.05) 0%, transparent 25%);
+        radial-gradient(circle at 15% 50%, rgba(255, 126, 95, 0.08) 0%, transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(254, 180, 123, 0.08) 0%, transparent 25%);
     pointer-events: none;
 }
 
@@ -54,7 +54,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5%;
-    background: rgba(10, 10, 15, 0.9);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
@@ -192,7 +192,7 @@ body {
     margin-bottom: 1rem;
     letter-spacing: -2px;
     position: relative;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .hero-content h2 {
@@ -324,7 +324,7 @@ body {
     font-family: var(--font-heading);
     font-size: 2rem;
     margin-bottom: 3rem;
-    color: #fff;
+    color: var(--text-color);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -334,7 +334,7 @@ body {
     content: '';
     height: 1px;
     flex-grow: 1;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     max-width: 300px;
 }
 
@@ -461,7 +461,7 @@ body {
     font-family: var(--font-heading);
     margin-bottom: 1rem;
     font-size: 1.3rem;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .project-desc {

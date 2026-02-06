@@ -17,6 +17,7 @@ const translations = {
         about_p1: "こんにちは。私は技術による課題解決に情熱を注ぐエンジニアです。",
         about_p2: "Web開発の全レイヤー（フロントエンドからバックエンド、インフラ）を横断的に理解し、最適な技術選定と実装を行います。特にパフォーマンスと保守性を重視したシステム設計が得意です。",
         about_p3: "常に最新の技術トレンド（Rust, WebAssembly等）をキャッチアップし、それを実用的なビジネスソリューションとして還元することを目指しています。",
+        about_p4: "また、実社会の複雑なデータ課題をエンジニアリングで解決することにも関心があり、機械学習コンペティション Kaggle の「NeurIPS - Open Polymer Prediction 2025」にて銀メダルを獲得しました。",
 
         sect_services: "02. Services",
         serv_web_title: "Web Development",
@@ -64,6 +65,7 @@ const translations = {
         about_p1: "Hello! I am an engineer passionate about solving problems through technology.",
         about_p2: "I have cross-functional understanding of web development layers (Frontend, Backend, Infra) to deliver optimal implementation. I specialize in system design focused on performance and maintainability.",
         about_p3: "I constantly catch up with the latest tech trends (Rust, WebAssembly, etc.) and aim to translate them into practical business solutions.",
+        about_p4: "I am also passionate about solving complex real-world data challenges through engineering. I earned a Silver Medal in the Kaggle 'NeurIPS - Open Polymer Prediction 2025' competition.",
 
         sect_services: "02. Services",
         serv_web_title: "Web Development",
@@ -179,10 +181,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         const navbar = document.querySelector('.navbar');
         if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(10, 10, 15, 0.95)';
-            navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.5)';
+            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
         } else {
-            navbar.style.background = 'rgba(10, 10, 15, 0.8)';
+            navbar.style.background = 'rgba(255, 255, 255, 0.8)';
             navbar.style.boxShadow = 'none';
         }
     });
